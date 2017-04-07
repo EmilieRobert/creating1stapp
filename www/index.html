@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    The very first application
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Macondo|Oswald:500" rel="stylesheet">
+    <title>Hello World</title>
+</head>
+
+<!--  BEGINS: Page style settings -->
+
+<style>
+    html {
+        font-family: inherit;
+        background-color: inherit;
+    }
+    
+    img {
+        width: 80%;
+    }
+    
+    h1,
+    h3 {   
+	font-family: 'Oswald', sans-serif;
+	}
+    p {
+	font-family: 'Macondo', cursive;
+        font-size: 1.2em;
+        padding-top: 10px;
+        text-align: left;
+    }
+</style>
+
+<!--  ENDS: Page style settings -->
+<!--  BEGINS: Content for our application -->
+
+<body class="container text-center">
+
+    <h1>Welcome to you first application</h1>
+    <img src="img/tallinn.jpg">
+    <h3>Description</h3>
+    <p>it's nice to have you in Tallinn!</p>
+    <p>
+Top 10 Must-See Sights in Tallinn
+
+A true rustic haven and digital powerhouse, Estonia's capital city is a beautiful blend of ancient and modern. 
+Stroll along the cobbled streets of Old Town or explore the sparkling Rotermann Quarter. Tallinn's a cultural hub and Estonia's national treasure. 
+</p>
+<h3> Quiz </h3>
+ <button id="press1" type="button" class="btn btn-primary">Let's go !</button><br>
+ <button id="press2" type="button" class="btn btn-info">Where to stay</button><br>
+</body>
+
+<!--  ENDS: Content for our application  -->
+
+
+<!--  BEGINS: Script block  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+   $("#press2").hide();
+   $("#press1").click(function() {
+        alert("go to www.getyourguide.com");
+	$("#press2").show();
+	     });
+	       $("#press2").click(function() {
+	       alert("we have several to offer !");
+	 });
+</script>
+<!--  ENDS: Script block  -->
+
+</html>
